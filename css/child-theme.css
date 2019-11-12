@@ -11612,6 +11612,328 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+ul#project-menu.navbar-nav {
+  border-bottom: 1px solid transparent; }
+
+.navbar-brand {
+  padding-top: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 100%;
+  letter-spacing: 0.15em; }
+
+.navbar-toggleable-md .navbar-collapse {
+  width: auto; }
+
+.thumb-card {
+  padding: 30px;
+  text-align: center;
+  white-space: nowrap; }
+
+.navbar {
+  margin-bottom: 60px;
+  width: 725px;
+  margin-right: auto;
+  margin-left: auto; }
+
+#wrapper-hero {
+  margin-top: 30px; }
+
+.carousel-inner {
+  overflow: visible; }
+
+.carousel-image-holder {
+  height: 550px;
+  margin: 0 auto;
+  white-space: nowrap; }
+
+.carousel-image-holder img {
+  width: auto;
+  max-height: 100%; }
+
+.image-caption {
+  font-size: 1rem;
+  float: left;
+  padding-right: 20px; }
+
+.image-counter {
+  float: right; }
+
+.image-caption btn, .image-caption .btn-primary {
+  color: inherit;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 6px 6px; }
+
+.btn-primary {
+  background-color: #b7b7b7;
+  border: none; }
+
+.caption-container {
+  margin: 5px 5px 0px 5px; }
+
+.info-button {
+  font-size: 0.8rem !important;
+  color: #a9a9a9 !important; }
+
+.image-caption-text {
+  font-size: 0.8rem;
+  padding-top: 6px;
+  color: #a9a9a9;
+  text-transform: uppercase;
+  font-family: 'Gill Sans Nova W01 Book Italic'; }
+
+.slide-buttons {
+  float: left; }
+
+.slide-buttons-cont {
+  position: absolute;
+  right: -59px; }
+
+.thumb-button {
+  padding: .5rem 1rem;
+  float: left; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 12px; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.6 7.4'%3E%3Cpath d='M0 2.9l5.6-2.9v0.8l-4.7 2.4v0l4.7 2.4V6.4l-5.6-2.9Z'/%3E%3C/svg%3E") !important;
+  margin-right: 25px; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.6 7.4'%3E%3Cpath d='M5.6 3.5 0 6.4v-0.8l4.7-2.3v0l-4.7-2.3v-0.8l5.6 2.9Z'/%3E%3C/svg%3E"); }
+
+.carousel-control-next, .carousel-control-prev {
+  position: inherit;
+  left: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  width: auto;
+  color: black;
+  font-family: 'JustSquareLTStdCyrillicW00UltL';
+  font-size: 32px;
+  opacity: 1.0; }
+
+.carousel-control-prev {
+  padding-right: 10px;
+  font-family: 'Exo', sans-serif; }
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: #878787; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  border-bottom: 1px solid black; }
+
+a.nav-link {
+  font-size: 0.8rem;
+  text-transform: uppercase; }
+
+.site-footer {
+  width: 100%;
+  background-color: white;
+  z-index: 2000;
+  padding-top: 40px; }
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.rjp-infobox {
+  height: 570px; }
+
+.wrapper {
+  padding: 30px 0px 0px 0px; }
+
+@media (min-width: 1680px) {
+  .navbar-brand {
+    padding-top: 120px; }
+  #wrapper-footer {
+    margin-top: 60px !important; }
+  #wrapper-hero {
+    margin-top: 60px; }
+  .carousel-image-holder {
+    height: 600px;
+    margin: 0 auto;
+    white-space: nowrap; }
+  .rjp-infobox {
+    height: 630px; } }
+
+@media (max-width: 1680px) {
+  .navbar-brand {
+    padding-top: 60px; }
+  #wrapper-footer {
+    margin-top: 50px !important; }
+  #wrapper-hero {
+    margin-top: 50px; } }
+
+@media (max-width: 1440px) {
+  .navbar-brand {
+    padding-top: 40px; }
+  .carousel-image-holder {
+    height: 480px; }
+  .rjp-infobox {
+    height: 470px; }
+  #wrapper-hero {
+    margin-top: 20px; }
+  #wrapper-footer {
+    margin-top: 10px !important; } }
+
+@media (pointer: coarse) and (min-device-width: 1024px) {
+  #wrapper-hero {
+    margin-top: 120px; } }
+
+@media (max-width: 996px) {
+  .slide-buttons-cont {
+    margin-left: 10px; }
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    bottom: auto;
+    z-index: 15;
+    padding-right: 28px; }
+  #wrapper-footer {
+    margin-top: 40px !important; } }
+
+@media (max-width: 775px) {
+  .carousel-image-holder {
+    height: 440px;
+    margin: 0 auto;
+    white-space: nowrap; }
+  .rjp-infobox {
+    height: 470px; }
+  .carousel-image-holder img {
+    width: auto;
+    max-height: 100%; }
+  .navbar-toggler {
+    margin-top: 20px; }
+  #wrapper-footer {
+    margin-top: 40px !important; } }
+
+@media (max-width: 575px) {
+  .navbar-toggleable-xs .navbar-nav {
+    float: left !important; }
+  .navbar {
+    padding: 0;
+    margin-bottom: 30px;
+    width: auto; }
+  .brandnamestyle {
+    float: left;
+    width: 100%; }
+  #hero-slides {
+    padding: 0; }
+  #wrapper-hero {
+    margin-top: 10px; }
+  .carousel-image-holder {
+    height: 240px;
+    margin: 0 auto;
+    white-space: nowrap; }
+  .carousel-image-holder img {
+    width: auto;
+    max-height: 100%; }
+  #wrapper-footer {
+    margin-top: 40px !important; } }
+
+@media (max-width: 996px) {
+  .container {
+    width: 100%; }
+  .navbar {
+    padding: 0;
+    padding-top: 30px;
+    margin-left: 4px; } }
+
+.editions {
+  white-space: normal; }
+
+.embed-container {
+  position: inherit;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#player, .fallback, body, html, iframe, .player .video-wrapper {
+  background-color: transparent; }
+
+.home .caption-container {
+  display: none; }
+
+.home .carousel-control-next, .home .carousel-control-prev {
+  color: white; }
+
+/* Tooltip on bottom */
+/* Tooltip */
+.test + .tooltip > .tooltip-inner {
+  background-color: #73AD21;
+  color: #FFFFFF;
+  border: 1px solid green;
+  padding: 15px;
+  font-size: 20px; }
+
+.tooltip-inner {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0;
+  margin-top: -30px;
+  font-size: .8rem;
+  text-transform: uppercase; }
+
+.tooltip.bs-tether-element-attached-top .tooltip-inner:before, .tooltip.tooltip-bottom .tooltip-inner:before {
+  display: none; }
+
+.thumb-img {
+  height: auto; }
+
+.thumb-grid {
+  padding-bottom: 160px; }
+
+.video-thumb-grid {
+  padding-bottom: 160px;
+  margin-top: 60px; }
+
+.linkwrap {
+  position: relative;
+  display: inline-block; }
+
+.blocker {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+
+.linkwrap iframe {
+  z-index: 2; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.thumb-video-card {
+  padding: 60px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
