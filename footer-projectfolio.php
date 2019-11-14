@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'fallback_cb'     => '',
 						'menu_id'         => 'project-menu',
 						'depth'			=> 2,
-						'walker'          => new WP_Bootstrap_Navwalker(),
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);		
 				
