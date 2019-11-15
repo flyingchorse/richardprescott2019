@@ -11616,14 +11616,10 @@ ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
 
 .navbar-brand {
-  padding-top: 30px;
   text-transform: uppercase;
   color: #000000;
   width: 100%;
   letter-spacing: 0.15em; }
-
-.navbar-toggleable-md .navbar-collapse {
-  width: auto; }
 
 .brandnamestyle {
   color: #a9a9a9; }
@@ -11647,6 +11643,11 @@ ul#project-menu.navbar-nav {
 .carousel-image-holder img {
   width: auto;
   max-height: 100%; }
+
+.carousel-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .image-caption {
   font-size: 1rem;
@@ -11749,8 +11750,6 @@ a.nav-link {
   padding: 30px 0px 0px 0px; }
 
 @media (min-width: 1680px) {
-  .navbar-brand {
-    padding-top: 120px; }
   #wrapper-footer {
     margin-top: 60px !important; }
   #wrapper-hero {
@@ -11763,16 +11762,12 @@ a.nav-link {
     height: 630px; } }
 
 @media (max-width: 1680px) {
-  .navbar-brand {
-    padding-top: 60px; }
   #wrapper-footer {
     margin-top: 50px !important; }
   #wrapper-hero {
     margin-top: 50px; } }
 
 @media (max-width: 1440px) {
-  .navbar-brand {
-    padding-top: 40px; }
   .carousel-image-holder {
     height: 480px; }
   .rjp-infobox {
@@ -11807,21 +11802,10 @@ a.nav-link {
   .carousel-image-holder img {
     width: auto;
     max-height: 100%; }
-  .navbar-toggler {
-    margin-top: 20px; }
   #wrapper-footer {
     margin-top: 40px !important; } }
 
 @media (max-width: 575px) {
-  .navbar-toggleable-xs .navbar-nav {
-    float: left !important; }
-  .navbar {
-    padding: 0;
-    margin-bottom: 30px;
-    width: auto; }
-  .brandnamestyle {
-    float: left;
-    width: 100%; }
   #hero-slides {
     padding: 0; }
   #wrapper-hero {
@@ -11838,11 +11822,7 @@ a.nav-link {
 
 @media (max-width: 996px) {
   .container {
-    width: 100%; }
-  .navbar {
-    padding: 0;
-    padding-top: 30px;
-    margin-left: 4px; } }
+    width: 100%; } }
 
 .editions {
   white-space: normal; }

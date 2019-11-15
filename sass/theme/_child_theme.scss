@@ -8,7 +8,7 @@ ul#project-menu.navbar-nav {
 }
 
 .navbar-brand {
-	padding-top: 30px;
+	
 	text-transform: uppercase;
  	color: #000000;
      width: 100%; 
@@ -16,7 +16,7 @@ ul#project-menu.navbar-nav {
 }
 
 .navbar-toggleable-md .navbar-collapse {
-	width: auto;
+
 }
 
 .brandnamestyle {
@@ -57,6 +57,10 @@ ul#project-menu.navbar-nav {
 	width: auto;
 	max-height: 100%;
 	
+}
+
+.carousel-item.active {
+	display: flex;
 }
 
 .image-caption {
@@ -188,9 +192,7 @@ height: 570px;
 
 
 @media (min-width: 1680px) {
-	.navbar-brand {
-		padding-top: 120px;
-		}
+	
 	#wrapper-footer {
 		margin-top: 60px!important;
 	}
@@ -208,9 +210,6 @@ height: 630px;
 }
 
 @media (max-width: 1680px) {
-	.navbar-brand {
-		padding-top: 60px;
-		}
 	#wrapper-footer {
 		margin-top: 50px!important;
 	}
@@ -222,9 +221,7 @@ height: 630px;
 	}
 @media (max-width: 1440px) {
 	
-	.navbar-brand {
-		padding-top: 40px;
-		}
+	
 	.carousel-image-holder {
 	height: 480px;
 	}
@@ -290,10 +287,7 @@ height: 470px;
 	max-height: 100%;
 	}
 	
-	.navbar-toggler {
-		margin-top: 20px;
-// 		margin-left:6px;
-	}
+	
 	#wrapper-footer {
 		margin-top:40px!important;
 	}
@@ -304,22 +298,7 @@ height: 470px;
 	
 
 @media (max-width: 575px) {
-	.navbar-toggleable-xs .navbar-nav {
-	float: left!important;
 	
-	}
-	.navbar {
-		padding: 0;
-		margin-bottom:30px;
-		width: auto;
-	}
-	
-	.brandnamestyle {
-// 	color: #a9a9a9;
-	float: left;
-	width: 100%;
-	
-	}	
 	
 	#hero-slides {
 	padding: 0;
@@ -351,11 +330,7 @@ height: 470px;
 	.container {
 		width: 100%;
 	}
-	.navbar {
-		padding: 0;
-		padding-top: 30px;
-		margin-left: 4px;
-	}
+	
 }
 
 .editions {

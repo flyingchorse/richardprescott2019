@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 		
-			<div class="container">
+			<div class="container-fluid">
 
 	<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
