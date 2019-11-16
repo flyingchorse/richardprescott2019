@@ -7,7 +7,7 @@
  * @package understrap
  */
 
-get_header();
+get_header('projects');
 
 $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
@@ -18,4 +18,5 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 <?php digidol_hero_home();?>
 
-<?php get_footer('projectfolio'); ?>
+<?php get_footer();
+	//get_footer('projectfolio'); ?>

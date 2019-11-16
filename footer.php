@@ -7,70 +7,33 @@
  * @package understrap
  */
 
-$the_theme = wp_get_theme();
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_sidebar( 'footerfull' ); ?>
+<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper pt-3 mt-3" id="wrapper-footer">
+<div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_html( $container ); ?>">
+	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
 
-		
+			<div class="col-md-12">
 
-				<footer class="site-footer fixed-bottom container" id="colophon">
-								<div class="slide-buttons-cont hidden-lg-up">
-				<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  	<span class="sr-only">Previous</span>
-  					</a></div>
-  					
-  					<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-  						<span class="sr-only">Next</span>
-  					</a></div>
-				</div>
-				<nav class="navbar navbar-toggleable-md navbar-light">
+				<footer class="site-footer" id="colophon">
 
-		
+					<div class="site-info">
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>	
+						Site built by Digidolmedia
 
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-				<div class="slide-buttons-cont hidden-md-down">
-				<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					  	-
-					  	<span class="sr-only">Previous</span>
-  					</a></div>
-  					
-  					<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  						+
-  						<span class="sr-only">Next</span>
-  					</a></div>
-				</div>
-
-		</nav>
-						
+					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
 
-			
+			</div><!--col end -->
 
 		</div><!-- row end -->
 
@@ -78,11 +41,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- wrapper end -->
 
-</div><!-- #page -->
+</div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
 
 </body>
 
-
 </html>
+

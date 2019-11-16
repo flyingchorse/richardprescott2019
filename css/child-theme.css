@@ -11616,6 +11616,8 @@ ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
 
 .navbar-brand {
+  padding-top: 90px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   color: #000000;
   width: 100%;
@@ -11686,8 +11688,10 @@ ul#project-menu.navbar-nav {
   float: left; }
 
 .slide-buttons-cont {
-  position: absolute;
-  right: -59px; }
+  /*
+	position: absolute;
+	right: -59px; 
+*/ }
 
 .thumb-button {
   padding: .5rem 1rem;

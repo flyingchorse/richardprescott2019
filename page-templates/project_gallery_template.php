@@ -7,7 +7,7 @@
  * @package understrap
  */
 
-get_header();
+get_header('automotive');
 
 $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
@@ -18,4 +18,4 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 <?php digidol_hero();?>
 
-<?php get_footer('projectparent'); ?>
+<?php get_footer(); ?>

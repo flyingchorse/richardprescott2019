@@ -8,7 +8,8 @@ ul#project-menu.navbar-nav {
 }
 
 .navbar-brand {
-	
+	padding-top: 90px;
+	padding-bottom: 30px;
 	text-transform: uppercase;
  	color: #000000;
      width: 100%; 
@@ -58,6 +59,8 @@ ul#project-menu.navbar-nav {
 	max-height: 100%;
 	
 }
+
+//Eventually found that the display:Flex fixed the auto margin being constrained by the child image. to positon the info button correctly
 
 .carousel-item.active {
 	display: flex;
@@ -111,8 +114,10 @@ ul#project-menu.navbar-nav {
 }
 
 .slide-buttons-cont {
+/*
 	position: absolute;
 	right: -59px; 
+*/
 	
 }
 
