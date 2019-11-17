@@ -628,7 +628,7 @@ function thumbnail_feed($theparent)
 				?>
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-aspect', array( "class" => " align-bottom")); ?></a>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'large', array( "class" => " align-bottom")); ?></a>
 					
 				</div>
 				<?php
