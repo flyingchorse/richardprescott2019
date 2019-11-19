@@ -42,6 +42,7 @@ ul#project-menu.navbar-nav {
 
 #wrapper-hero {
 	margin-top: 30px;
+	padding-bottom: 150px !important;
 }
 
 .carousel-inner {
@@ -174,7 +175,7 @@ a.nav-link {
 
 .site-footer {
 	width: 100%;
-	background-color: white;
+	background-color: transparent;
 	z-index: 2000;
 	padding-top: 40px;
 }
@@ -194,6 +195,12 @@ height: 570px;
 	padding: 30px 0px 0px 0px;
 }
 
+#wrapper-footer {
+	background-color: #5a5a5a;
+	padding-bottom: 120px;
+	color: white;
+	padding-top: 60px;
+}
 
 
 @media (min-width: 1680px) {
@@ -203,6 +210,7 @@ height: 570px;
 	}
 	#wrapper-hero {
 		margin-top: 60px;
+		padding-bottom: 150px!important;
 	}
 	.carousel-image-holder {
 	height: 600px;
@@ -220,6 +228,7 @@ height: 630px;
 	}
 	#wrapper-hero {
 		margin-top: 50px;
+		padding-bottom: 150px!important;
 	}
 
 	
@@ -235,6 +244,7 @@ height: 470px;
 }
 	#wrapper-hero {
 		margin-top: 20px;
+		padding-bottom: 150px!important;
 	}
 	
 	#wrapper-footer {
@@ -246,6 +256,7 @@ height: 470px;
 		
 		#wrapper-hero {
 		margin-top: 120px;
+		padding-bottom: 150px!important;
 	}
 
 		
@@ -310,6 +321,7 @@ height: 470px;
 }
 	#wrapper-hero {
 	margin-top: 10px;
+	padding-bottom: 150px!important;
 }
 
 .carousel-image-holder {

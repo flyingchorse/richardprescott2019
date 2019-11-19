@@ -11632,7 +11632,8 @@ ul#project-menu.navbar-nav {
   white-space: nowrap; }
 
 #wrapper-hero {
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-bottom: 150px !important; }
 
 .carousel-inner {
   overflow: visible; }
@@ -11738,7 +11739,7 @@ a.nav-link {
 
 .site-footer {
   width: 100%;
-  background-color: white;
+  background-color: transparent;
   z-index: 2000;
   padding-top: 40px; }
 
@@ -11753,11 +11754,18 @@ a.nav-link {
 .wrapper {
   padding: 30px 0px 0px 0px; }
 
+#wrapper-footer {
+  background-color: #5a5a5a;
+  padding-bottom: 120px;
+  color: white;
+  padding-top: 60px; }
+
 @media (min-width: 1680px) {
   #wrapper-footer {
     margin-top: 60px !important; }
   #wrapper-hero {
-    margin-top: 60px; }
+    margin-top: 60px;
+    padding-bottom: 150px !important; }
   .carousel-image-holder {
     height: 600px;
     margin: 0 auto;
@@ -11769,7 +11777,8 @@ a.nav-link {
   #wrapper-footer {
     margin-top: 50px !important; }
   #wrapper-hero {
-    margin-top: 50px; } }
+    margin-top: 50px;
+    padding-bottom: 150px !important; } }
 
 @media (max-width: 1440px) {
   .carousel-image-holder {
@@ -11777,13 +11786,15 @@ a.nav-link {
   .rjp-infobox {
     height: 470px; }
   #wrapper-hero {
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding-bottom: 150px !important; }
   #wrapper-footer {
     margin-top: 10px !important; } }
 
 @media (pointer: coarse) and (min-device-width: 1024px) {
   #wrapper-hero {
-    margin-top: 120px; } }
+    margin-top: 120px;
+    padding-bottom: 150px !important; } }
 
 @media (max-width: 996px) {
   .slide-buttons-cont {
@@ -11813,7 +11824,8 @@ a.nav-link {
   #hero-slides {
     padding: 0; }
   #wrapper-hero {
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding-bottom: 150px !important; }
   .carousel-image-holder {
     height: 240px;
     margin: 0 auto;
