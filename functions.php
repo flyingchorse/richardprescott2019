@@ -630,6 +630,7 @@ function thumbnail_feed($theparent)
 					<span class="helper"></span>
 					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'large', array( "class" => " align-bottom")); ?></a>
 					
+					
 				</div>
 				<?php
 				
@@ -647,7 +648,53 @@ function thumbnail_feed($theparent)
 
 		 <?php
 		 }
-	}	 
+	}	
+	
+function journal_feed()
+{
+	
+	
+						
+						$latest_blog_posts = new WP_Query(array( 'post_type' => 'post' ));
+						
+						
+						
+						
+						
+					if ( $latest_blog_posts->have_posts() ) :
+						
+						
+						
+						
+						
+						?>
+						<div class="container-fluid thumb-grid journal-grid">
+		
+							<div class="row"><?php
+						
+						while ($latest_blog_posts->have_posts()) : $latest_blog_posts->the_post(); 
+							
+								
+				
+							?>
+				<div class="col-md-3 col-xl-3 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
+					
+					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'large' , array( "class" => " align-bottom") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
+					<div class="feed-title d-flex"><?php the_title();?></div>
+				</div>
+				<?php								
+					
+					
+						endwhile;
+						endif;
+					?>
+							</div>
+						</div>
+					<?php
+				
+	
+	
+} 
 
  
 

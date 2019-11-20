@@ -35,7 +35,7 @@
 		<div class="card-block">
 			<div class="entry-content card-text">
 				<?php
-				echo understrap_excerpt_with_length( $post->ID, 15 );
+				
 				?>
 
 				<?php

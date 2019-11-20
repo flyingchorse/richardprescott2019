@@ -16,7 +16,7 @@ $col = get_theme_mod( 'understrap_grid_post_columns' );
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<?php $alt = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true ); ?>
 				<img class="card-img "
-				     src="<?php echo esc_html( get_the_post_thumbnail_url( $post->ID, 'grid-image' ) ) ?>" alt="<?php echo esc_html( $alt ); ?>">
+				     src="<?php echo esc_html( get_the_post_thumbnail_url( $post->ID, 'large' ) ) ?>" alt="<?php echo esc_html( $alt ); ?>">
 
 				<div class="card-img-overlay">
 

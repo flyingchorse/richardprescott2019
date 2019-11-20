@@ -20,6 +20,19 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	
 	// this template is pulling in the thumbnails from the underlying galleries.
 	
-	 thumbnail_feed($post->ID); ?>
+	 thumbnail_feed($post->ID);?>
+	 
+	 
+<div class="wrapper" id="index-wrapper">
+	<div class="divider"><span></span><span>Journal</span><span></span></div>
+
+		
+	
+
+	<?php journal_feed(); ?>
+</div><!-- #index-wrapper -->
+	 
+	 
+	 
 
 <?php get_footer(); ?>
