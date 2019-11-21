@@ -668,7 +668,7 @@ function journal_feed()
 						
 						
 						?>
-						<div class="container-fluid thumb-grid journal-grid">
+						<div class="container-fluid">
 		
 							<div class="row"><?php
 						
