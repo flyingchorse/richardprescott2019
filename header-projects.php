@@ -116,10 +116,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		endif;  ?>
        
     </ul>
-</div>
+
 
 				
 				<div class="slide-buttons-cont hidden-md-down">
+					<div class="thumb-button"></div>
 				<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 					  	-
 					  	<span class="sr-only">Previous</span>
@@ -129,6 +130,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   						+
   						<span class="sr-only">Next</span>
   					</a></div>
+  					</div>
 				</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
