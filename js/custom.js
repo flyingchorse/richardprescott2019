@@ -19,7 +19,6 @@ jQuery(document).ready(function(){
 
 
 
-
 function goToSlide(number) {
    jQuery("#carouselExampleControls").carousel(number);
 }

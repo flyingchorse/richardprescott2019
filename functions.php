@@ -106,8 +106,8 @@ function digidol_gallery_carousel() {
 					
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
-										<div class="carousel-image-holder align-middle"><span class="helper"></span>
-											<img src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
+										<div class="carousel-image-holder">
+											<img class ="d-block mx-auto"src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>
 												<div id="collapse<?php echo $loopcount ?>" class="collapse image-caption-text"><?php echo get_post_field('post_content', $attachment);?></div>
