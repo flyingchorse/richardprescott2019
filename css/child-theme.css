@@ -11892,7 +11892,7 @@ a.nav-link {
 
 .thumb-grid {
   padding-top: 50px;
-  padding-bottom: 160px; }
+  padding-bottom: 50px; }
 
 .video-thumb-grid {
   padding-bottom: 160px;
@@ -11929,7 +11929,7 @@ a.nav-link {
   padding: 60px; }
 
 .journal-grid {
-  padding-top: 180px; }
+  padding-top: 70px; }
 
 .divider {
   /* minor cosmetics */
@@ -11950,7 +11950,7 @@ a.nav-link {
   top: 20px;
   /* adjust vertical align */
   /* line width */
-  background-size: 100% 2px;
+  background-size: 100% 1px;
   /* line width */
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat; }
@@ -11961,7 +11961,7 @@ a.nav-link {
   background-image: linear-gradient(90deg, transparent, #000); }
 
 .divider span:nth-child(2) {
-  color: #000;
+  color: #707070;
   padding: 0px 30px;
   width: auto;
   white-space: nowrap; }

@@ -411,7 +411,7 @@ height: 470px;
 
 .thumb-grid {
 	padding-top: 50px;
-	padding-bottom: 160px;
+	padding-bottom: 50px;
 }
 .video-thumb-grid {
 	padding-bottom: 160px;
@@ -428,7 +428,7 @@ height: 470px;
 }
 
 .journal-grid {
-	padding-top: 180px;
+	padding-top: 70px;
 }
 
 .divider {								/* minor cosmetics */
@@ -442,8 +442,8 @@ height: 470px;
         .divider span:first-child, .divider span:last-child {
             width: 50%;
             top: 20px;							/* adjust vertical align */
-            -moz-background-size: 100% 2px; 	/* line width */
-            background-size: 100% 2px; 			/* line width */
+            -moz-background-size: 100% 1px; 	/* line width */
+            background-size: 100% 1px; 			/* line width */
             background-position: 0 0, 0 100%;
             background-repeat: no-repeat;
         }
@@ -455,7 +455,7 @@ height: 470px;
             background-image: linear-gradient(90deg, transparent, #000);
         }
         .divider span:nth-child(2) {
-            color: #000; padding: 0px 30px; width: auto; white-space: nowrap;
+            color: #707070; padding: 0px 30px; width: auto; white-space: nowrap;
         }
         .divider span:last-child {				/* color changes in here */
             background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
