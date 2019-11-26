@@ -17,6 +17,7 @@ jQuery(document).ready(function(){
 	
 });
 
+
 function goToSlide(number) {
 	
    jQuery("#carouselExampleControls").carousel(number);
@@ -26,13 +27,9 @@ jQuery('.thumbnail-image').on('click' , function () {
 	
 	var slidemove = 0;
 	slidemove = this.getAttribute('change-slide-to');
-		
-	   
-	   
-	   jQuery("#carouselExampleControls").carousel(Number(slidemove));
+	   jQuery("#wrapper-hero").collapse('show');
 	   jQuery("#multic-2").collapse('hide');
-
-	 
+	 jQuery("#carouselExampleControls").carousel(Number(slidemove));
 	 
 	 });
 
@@ -42,8 +39,8 @@ jQuery('#multic-2').on('hidden.bs.collapse', function () {
   jQuery("#wrapper-hero").collapse('show');
 });
 
-jQuery('#multic-2').on('shown.bs.collapse', function () {
+jQuery('#multic-2').on('show.bs.collapse', function () {
   // do something…
   
   jQuery("#wrapper-hero").collapse('hide');
-});// Add your custom JS here.
+});
