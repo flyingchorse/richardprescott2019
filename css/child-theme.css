@@ -11971,6 +11971,16 @@ a.nav-link {
   background-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
   background-image: linear-gradient(90deg, #000, transparent); }
 
+.journal-grid .thumb-card {
+  font-size: .8rem;
+  color: #a7a7a7;
+  text-transform: uppercase;
+  text-align: left; }
+
+.journal-grid .thumb-card .feed-title {
+  white-space: normal;
+  max-width: 300px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

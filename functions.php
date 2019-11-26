@@ -53,6 +53,7 @@ function child_theme_setup() {
 
 add_image_size( 'grid-image', 352,229, true );
 add_image_size( 'grid-aspect', 352, false );
+add_image_size( 'grid-journal', 352,352, true );
 
 
 }
@@ -650,12 +651,12 @@ function thumbnail_feed($theparent)
 		 }
 	}	
 	
-function journal_feed()
+function journal_feed($columns,$numposts)
 {
 	
 	
 						
-						$latest_blog_posts = new WP_Query(array( 'post_type' => 'post' ));
+						$latest_blog_posts = new WP_Query(array( 'post_type' => 'post', 'posts_per_page' => $numposts ));
 						
 						
 						
@@ -677,10 +678,16 @@ function journal_feed()
 								
 				
 							?>
-				<div class="col-md-3 col-xl-3 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
+				<div class="col-md-<?php echo $columns;?> col-xl-<?php echo $columns;?> thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					
-					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'large' , array( "class" => " align-bottom") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
-					<div class="feed-title d-flex"><?php the_title();?></div>
+					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'grid-journal' , array( "class" => " align-bottom") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
+					<div class="feed-title d-flex">#<?php the_title();$post_tags = get_the_tags();
+ 
+if ( $post_tags ) {
+    foreach( $post_tags as $tag ) {
+    echo $tag->name . ', '; 
+    }
+}?></div>
 				</div>
 				<?php								
 					
@@ -697,5 +704,15 @@ function journal_feed()
 } 
 
  
-
+function show_tags()
+{
+    $post_tags = get_the_tags();
+    $separator = ' | ';
+    if (!empty($post_tags)) {
+        foreach ($post_tags as $tag) {
+            $output .= '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>' . $separator;
+        }
+        return trim($output, $separator);
+    }
+}
 

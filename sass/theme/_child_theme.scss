@@ -464,3 +464,20 @@ height: 470px;
             background-image: -o-linear-gradient(180deg, #000, transparent);
             background-image: linear-gradient(90deg, #000, transparent);
         }
+        
+ .journal-grid .thumb-card {
+	 font-size: .8rem;
+	 color: #a7a7a7;
+	 text-transform: uppercase;
+	 text-align: left;
+ } 
+ 
+ .journal-grid .thumb-card a {
+	 
+	 
+ }
+ 
+  .journal-grid .thumb-card .feed-title {
+	  white-space: normal;
+	  max-width: 300px;
+  }
