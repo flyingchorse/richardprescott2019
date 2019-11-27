@@ -11758,9 +11758,9 @@ a.nav-link {
   padding: 30px 0px 0px 0px; }
 
 #wrapper-footer {
-  background-color: #5a5a5a;
+  border-top: solid 1px gray;
   padding-bottom: 120px;
-  color: white;
+  color: black;
   padding-top: 60px; }
 
 @media (min-width: 1680px) {
@@ -11937,10 +11937,9 @@ a.nav-link {
 .divider {
   /* minor cosmetics */
   display: table;
-  font-size: 24px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   text-align: center;
-  width: 75%;
-  /* divider width */
   margin: 40px auto;
   /* spacing above/below */ }
 
@@ -11950,7 +11949,7 @@ a.nav-link {
 
 .divider span:first-child, .divider span:last-child {
   width: 50%;
-  top: 20px;
+  top: 10px;
   /* adjust vertical align */
   /* line width */
   background-size: 100% 1px;
@@ -11960,19 +11959,19 @@ a.nav-link {
 
 .divider span:first-child {
   /* color changes in here */
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#000));
-  background-image: linear-gradient(90deg, transparent, #000); }
+  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#000));
+  background-image: linear-gradient(90deg, #000, #000); }
 
 .divider span:nth-child(2) {
   color: #707070;
-  padding: 0px 30px;
+  padding: 0px 20px;
   width: auto;
   white-space: nowrap; }
 
 .divider span:last-child {
   /* color changes in here */
-  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
-  background-image: linear-gradient(90deg, #000, transparent); }
+  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#000));
+  background-image: linear-gradient(90deg, #000, #000); }
 
 .journal-grid .thumb-card {
   font-size: .8rem;
@@ -11983,6 +11982,51 @@ a.nav-link {
 .journal-grid .thumb-card .feed-title {
   white-space: normal;
   max-width: 300px; }
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-2dot4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+@media (min-width: 540px) {
+  .col-sm-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; } }
+
+@media (min-width: 720px) {
+  .col-md-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; } }
+
+@media (min-width: 960px) {
+  .col-lg-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; } }
+
+@media (min-width: 1140px) {
+  .col-xl-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%; } }
 
 /*
 * Use existing Bootstrap 4 classes and

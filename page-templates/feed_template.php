@@ -24,16 +24,24 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	 
 	 
 <div class="wrapper" id="index-wrapper">
-	<div class="divider"><span></span><span>Journal</span><span></span></div>
+	
+	<div class="divider"><span></span><span>Insta</span><span></span></div>
 
 		
 	
-<div class="container-fluid thumb-grid journal-grid">
+	<div class="container-fluid thumb-grid journal-grid">
 		
 	<div class="row">
-		<div class="col-sm-8"><?php journal_feed(3,8); ?></div>
-		<div class="col-sm-4"><?php journal_feed(12,2); ?></div>
+		<div class="col-sm-12"><?php journal_feed('2dot4',5); ?></div>
+		
 	
+	</div>
+	</div>
+	<div class="divider"><span></span><span>Journal</span><span></span></div>
+	<div class="container-fluid thumb-grid journal-grid">
+	
+	<div class="row">
+		<div class="col-sm-12"><?php journal_feed('2dot4',5); ?></div>
 	</div>
 </div>
 </div><!-- #index-wrapper -->
