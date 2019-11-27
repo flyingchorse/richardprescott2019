@@ -11631,6 +11631,9 @@ ul#project-menu.navbar-nav {
   text-align: center;
   white-space: nowrap; }
 
+.navbar {
+  padding: 0; }
+
 #wrapper-hero {
   margin-top: 30px;
   padding-bottom: 150px !important; }
