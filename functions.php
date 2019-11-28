@@ -53,6 +53,7 @@ function child_theme_setup() {
 
 add_image_size( 'grid-image', 352,229, true );
 add_image_size( 'grid-aspect', 352, false );
+add_image_size( 'grid-height', 99999, 640, false );
 add_image_size( 'grid-journal', 352,352, true );
 
 
@@ -629,7 +630,7 @@ function thumbnail_feed($theparent)
 				?>
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'large', array( "class" => " align-bottom")); ?></a>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a>
 					
 					
 				</div>
