@@ -626,11 +626,18 @@ function thumbnail_feed($theparent)
 				
 				// echo apply_filters( 'the_title' , $attachment->post_title );wp_get_attachment_image_src($array_ids, 'feature_thumb');
 				$thegallerylinkid = get_field( 'targetgallery', $attachment );
+				$thevimeoid =  get_field( 'vimeoid', $attachment );
 				
 				?>
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
-					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a>
+					
+					<?php if (!$thevimeoid) { ?>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a> <?php } else {
+						?>
+						<a class='align-bottom thumbnail-image' href='#'><div class='embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
+						<?php
+						
+					} ?>
 					
 					
 				</div>
