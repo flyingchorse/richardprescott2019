@@ -201,7 +201,7 @@ height: 570px;
 #wrapper-footer {
 	border-top: solid 1px gray;
 	padding-bottom: 120px;
-	color: black;
+	color: rgba(0,0,0,.5);
 	padding-top: 60px;
 }
 
@@ -471,7 +471,7 @@ height: 470px;
         
  .journal-grid .thumb-card {
 	 font-size: .8rem;
-	 color: #a7a7a7;
+	 color: rgba(0,0,0,.5);
 	 text-transform: uppercase;
 	 text-align: left;
  } 
@@ -484,6 +484,13 @@ height: 470px;
   .journal-grid .thumb-card .feed-title {
 	  white-space: normal;
 	  max-width: 300px;
+  }
+  
+  .feed-divider {
+	  border-bottom: solid 1px rgba(0,0,0,.5);
+	  text-transform: uppercase;
+	  font-size: 0.8rem;
+	  color: rgba(0,0,0,.5);
   }
   
   .col-2dot4,
