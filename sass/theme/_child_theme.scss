@@ -1,5 +1,11 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	padding-bottom: 400px;
+}
 ul.navbar-nav {
 	}
 
@@ -203,6 +209,10 @@ height: 570px;
 	padding-bottom: 120px;
 	color: rgba(0,0,0,.5);
 	padding-top: 60px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 

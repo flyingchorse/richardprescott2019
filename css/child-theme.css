@@ -11612,6 +11612,13 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  padding-bottom: 400px; }
+
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
 
@@ -11761,7 +11768,11 @@ a.nav-link {
   border-top: solid 1px gray;
   padding-bottom: 120px;
   color: rgba(0, 0, 0, 0.5);
-  padding-top: 60px; }
+  padding-top: 60px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0; }
 
 @media (min-width: 1680px) {
   #wrapper-footer {
