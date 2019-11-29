@@ -53,7 +53,7 @@ function child_theme_setup() {
 
 add_image_size( 'grid-image', 352,229, true );
 add_image_size( 'grid-aspect', 352, false );
-add_image_size( 'grid-height', 99999, 640, false );
+add_image_size( 'grid-height', 99999, 460, false );
 add_image_size( 'grid-journal', 352,352, true );
 
 
