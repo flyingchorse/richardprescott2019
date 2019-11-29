@@ -206,7 +206,6 @@ height: 570px;
 
 #wrapper-footer {
 	border-top: solid 1px gray;
-	padding-bottom: 120px;
 	color: rgba(0,0,0,.5);
 	padding-top: 60px;
 	position: absolute;
@@ -215,6 +214,17 @@ height: 570px;
 	bottom: 0;
 }
 
+.footer-nav-menu {
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
+	color: rgba(0,0,0,.5);
+}
+
+.footer-nav-menu a.nav-link {
+	color: rgba(0,0,0,.5)!important;
+	
+}
 
 @media (min-width: 1680px) {
 	
