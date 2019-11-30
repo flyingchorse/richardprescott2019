@@ -9,10 +9,10 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'folio-image', array( 'class' => 'pb-3' )); ?>
+	<?php  echo get_the_post_thumbnail( $post->ID, 'folio-image', array( 'class' => 'pb-3' )); ?>
 	
 	
-	<header class="entry-header">
+	<header class="entry-header mb-5">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -28,14 +28,14 @@
 			'after'  => '</div>',
 		) );
 		?>
-		<div class="entry-meta">
+		<div class="entry-meta mb-5">
 
-			<?php understrap_posted_on(); ?>
+			<?php  understrap_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer mb-5">
 		
 		<?php understrap_entry_footer(); ?>
 
