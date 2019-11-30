@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 	<div class="container">
 	<div class="row">
-		<div class="col-md-4">RICHARD PRESCOTT PHOTOGRAPHER</div>
+		<div class="col-md-4 mb-4">RICHARD PRESCOTT PHOTOGRAPHER</div>
 		<div class="col-md-4">
 		  <?php wp_nav_menu(
 					array(

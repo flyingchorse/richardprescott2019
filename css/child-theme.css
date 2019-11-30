@@ -11902,6 +11902,9 @@ a.nav-link {
   padding: 15px;
   font-size: 20px; }
 
+.tooltip .arrow {
+  display: none; }
+
 .tooltip-inner {
   background-color: white;
   color: rgba(0, 0, 0, 0.5);
