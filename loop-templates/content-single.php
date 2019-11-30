@@ -28,9 +28,12 @@
 			'after'  => '</div>',
 		) );
 		?>
-		<div class="entry-meta mb-5">
+		<div class="entry-meta">
 
-			<?php  understrap_posted_on(); ?>
+			<?php //  understrap_posted_on(); 
+				$posted_on_date = get_the_date();
+				echo "Posted on " . $posted_on_date;
+			?>
 
 		</div><!-- .entry-meta -->
 	</div><!-- .entry-content -->
