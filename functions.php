@@ -677,7 +677,7 @@ function journal_feed($columns,$numposts)
 						
 						
 						?>
-						<div class="container-fluid">
+						<div class="container">
 		
 							<div class="row"><?php
 						

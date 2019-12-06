@@ -11622,6 +11622,18 @@ body {
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
 
+h1 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: black; }
+
+.content-area {
+  color: gray; }
+
+.entry-footer a {
+  color: gray;
+  opacity: 0.8; }
+
 .navbar-brand {
   padding-top: 90px;
   padding-bottom: 50px;
