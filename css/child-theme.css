@@ -11642,6 +11642,10 @@ h1 {
   width: 100%;
   letter-spacing: 0.15em; }
 
+.insta-block {
+  margin: 0 auto;
+  width: 640px; }
+
 .brandnamestyle {
   color: #a9a9a9; }
 

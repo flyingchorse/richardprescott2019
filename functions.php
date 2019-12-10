@@ -659,12 +659,12 @@ function thumbnail_feed($theparent)
 		 }
 	}	
 	
-function journal_feed($columns,$numposts)
+function journal_feed($columns,$numposts,$postcat)
 {
 	
 	
 						
-						$latest_blog_posts = new WP_Query(array( 'post_type' => 'post', 'posts_per_page' => $numposts ));
+						$latest_blog_posts = new WP_Query(array( 'post_type' => 'post', 'posts_per_page' => $numposts, 'category_name' => $postcat ));
 						
 						
 						
