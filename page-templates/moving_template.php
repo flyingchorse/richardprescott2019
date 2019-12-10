@@ -44,7 +44,17 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				
 					<div class="carousel-item <?php if ($loopcount == 1) { echo 'active'; }; ?>">			
 						<div class="container carousel-image-holder align-middle">
-						
+																					<div class="row justify-content-center">
+					<div class="slide-buttons-cont hidden-md-down">
+						<div class="thumb-button">
+					
+								<a class="nav-link" href="#" data-toggle="collapse" data-target="#multic-2" >THUMBNAILS</a>
+								
+						</div>
+						<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-<span class="sr-only">Previous</span></a></div>
+						<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">+<span class="sr-only">Next</span></a></div>
+					</div><!-- END OF slide-buttons-cont -->
+				</div> <!-- END OF ROW -->
 							
 						<div class='embed-container '><iframe src='https://player.vimeo.com/video/<?php echo $id ?>' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 							

@@ -108,6 +108,19 @@ function digidol_gallery_carousel() {
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
 										<div class="carousel-image-holder">
+											
+															<div class="row justify-content-center">
+					<div class="slide-buttons-cont hidden-md-down">
+						<div class="thumb-button">
+					
+								<a class="nav-link" href="#" data-toggle="collapse" data-target="#multic-2" >THUMBNAILS</a>
+								
+						</div>
+						<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-<span class="sr-only">Previous</span></a></div>
+						<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">+<span class="sr-only">Next</span></a></div>
+					</div><!-- END OF slide-buttons-cont -->
+				</div> <!-- END OF ROW -->
+											
 											<img class ="d-block mx-auto"src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>
@@ -275,6 +288,12 @@ function digidol_gallery_carousel_home() {
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
 										<div class="carousel-image-holder ">
+																										<div class="row justify-content-center">
+					<div class="slide-buttons-cont hidden-md-down">
+						<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-<span class="sr-only">Previous</span></a></div>
+						<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">+<span class="sr-only">Next</span></a></div>
+					</div><!-- END OF slide-buttons-cont -->
+				</div> <!-- END OF ROW -->
 											<img class="d-block mx-auto" src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>

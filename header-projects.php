@@ -73,11 +73,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-			<?php if ( 'container' == $container ) : ?>
-		<!-- .container -->
-			<?php endif; ?>
-
-		</nav>
+			
+			
+			
+			
 		<?php if ( $post->ID ) {
     $foliolink = wp_list_pages( array(
         'title_li' => '',
@@ -105,7 +104,16 @@ $container = get_theme_mod( 'understrap_container_type' );
     ) );
 }
 ?>
+
+<?php if ( 'container' == $container ) : ?>
+		<!-- .container -->
+			<?php endif; ?>
+
+		</nav>
+
 <nav class="navbar navbar-expand-md navbar-light justify-content-center">
+	<div id="navbarNavDropdown" class="collapse navbar-collapse justify-content-center" style="">
+
 	
     <ul class="navbar-nav">
 	    <?php echo $foliolink; ?>
@@ -119,18 +127,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 				
-				<div class="slide-buttons-cont hidden-md-down">
-					<div class="thumb-button"></div>
-				<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					  	-
-					  	<span class="sr-only">Previous</span>
-  					</a></div>
-  					
-  					<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  						+
-  						<span class="sr-only">Next</span>
-  					</a></div>
-  					</div>
-				</nav><!-- .site-navigation -->
+				
+				</nav>
+				<!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->

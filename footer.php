@@ -24,8 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				 <?php wp_nav_menu(
 						array(
 							'theme_location'	 => 'primary',
-							'container_class' => 'navbar-collapse justify-content-center',
-							'container_id'	 => 'navbarNavDropdown',
+							'container_class' => 'navbar justify-content-center',
+							'container_id'	 => 'navbarNavFooter',
 							'menu_class'		 => 'navbar-nav',
 							'fallback_cb'	 => '',
 							'menu_id'		 => 'main-menu',

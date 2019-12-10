@@ -182,21 +182,7 @@ if ( $post->post_parent ) {
 
 
 				
-<div class="slide-buttons-cont hidden-md-down">
-	<div class="thumb-button">
-					<?php
-						        if (!isset($children)) { } else { ?>
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#multic-2" >THUMBNAILS</a>
-    <?php } ?></div>
-				<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					  	-
-					  	<span class="sr-only">Previous</span>
-  					</a></div>
-  					
-  					<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-  						+
-  						<span class="sr-only">Next</span>
-  					</a></div>
-</div>
+
 				</nav>
+
 	</div><!-- #wrapper-navbar end -->
