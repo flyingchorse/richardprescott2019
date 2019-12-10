@@ -9,7 +9,7 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 
-	<?php  echo get_the_post_thumbnail( $post->ID, 'folio-image', array( 'class' => 'pb-3' )); ?>
+	<?php  echo get_the_post_thumbnail( $post->ID, 'folio-image', array( 'class' => 'pb-3 carousel-image-holder' )); ?>
 	
 	
 	<header class="entry-header mb-5">
