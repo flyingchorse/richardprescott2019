@@ -35,8 +35,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					); ?>		
 		</nav>		 
 		</div><!-- End of Row -->
-		<div class="row  justify-content-center pb-4"><a class="d-inline-flex" href="https://www.instagram.com/richard_prescott/"><img  src="<?php echo get_stylesheet_directory_uri(	 ); ?>/src/img/IG_Glyph_Fill.png" alt="Instagram" width="70" height="70" /></a></div>
-		<div class="row  justify-content-center"><a class="d-inline-flex" href="https://vimeo.com/user17645474"><img class="d-inline-flex" src="<?php echo get_stylesheet_directory_uri(	); ?>/src/img/vimeo_icon_dark.png" alt="vimeo_icon_dark" width="70" height="70" /></a></div>
+		<div class="row  justify-content-center pb-4"><a class="d-inline-flex" href="https://www.instagram.com/richard_prescott/"><img  src="<?php echo get_stylesheet_directory_uri(	 ); ?>/src/img/IG_Glyph_Fill.png" alt="Instagram" width="70" height="70" /></a><a class="d-inline-flex" href="https://vimeo.com/user17645474"><img class="d-inline-flex" src="<?php echo get_stylesheet_directory_uri(	); ?>/src/img/vimeo_icon_dark.png" alt="vimeo_icon_dark" width="70" height="70" /></a></div>
+		
 		<div class="container  justify-content-center pt-4 pb-4 copyrightinfo">PLEASE NOTE THAT THE IMAGES AND CONTENTS OF THIS WEB SITE ARE THE PROPERTY OF RICHARD PRESCOTT AND ARE PROTECTED UNDER INTERNATIONAL COPYRIGHT LAWS.
 ALL RIGHTS RESERVED. NO USE OR COPYING BY ANY MEANS, TRANSFERENCE OR ANY REUSE OF ANY OF THE IMAGES ON THIS WEBSITE CAN BE MADE WHAT SO EVER WITHOUT THE WRITTEN PERMISSION OF RICHARD PRESCOTT. © 2017 RICHARD PRESCOTT</div>
 	</div>
