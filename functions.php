@@ -288,12 +288,12 @@ function digidol_gallery_carousel_home() {
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
 										<div class="carousel-image-holder ">
-																										<div class="row justify-content-center">
-					<div class="slide-buttons-cont hidden-md-down">
-						<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-<span class="sr-only">Previous</span></a></div>
-						<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">+<span class="sr-only">Next</span></a></div>
-					</div><!-- END OF slide-buttons-cont -->
-				</div> <!-- END OF ROW -->
+											<div class="row justify-content-center">
+												<div class="slide-buttons-cont hidden-md-down">
+													<div class="slide-buttons"><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-<span class="sr-only">Previous</span></a></div>
+													<div class="slide-buttons"><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">+<span class="sr-only">Next</span></a></div>
+												</div><!-- END OF slide-buttons-cont -->
+											</div> <!-- END OF ROW -->
 											<img class="d-block mx-auto" src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>
@@ -651,9 +651,10 @@ function thumbnail_feed($theparent)
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					
 					<?php if (!$thevimeoid) { ?>
+					<span class="helper"></span>
 					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a> <?php } else {
 						?>
-						<a class='align-bottom thumbnail-image' href='<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>'><div class='embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
+						<a class='align-bottom thumbnail-image' href='<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>'><span class="vimeo-helper"></span><div class='embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
 						<?php
 						
 					} ?>
