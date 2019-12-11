@@ -11617,7 +11617,8 @@ html {
   min-height: 100%; }
 
 body {
-  padding-bottom: 378px; }
+  padding-bottom: 378px;
+  text-transform: uppercase; }
 
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
