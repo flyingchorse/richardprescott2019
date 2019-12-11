@@ -11617,7 +11617,7 @@ html {
   min-height: 100%; }
 
 body {
-  padding-bottom: 404px; }
+  padding-bottom: 378px; }
 
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
@@ -11824,7 +11824,7 @@ a.nav-link {
     margin-top: 50px;
     padding-bottom: 150px !important; }
   body {
-    padding-bottom: 404px; } }
+    padding-bottom: 378px; } }
 
 @media (max-width: 1440px) {
   .carousel-image-holder {
@@ -11837,14 +11837,14 @@ a.nav-link {
   #wrapper-footer {
     margin-top: 10px !important; }
   body {
-    padding-bottom: 404px; } }
+    padding-bottom: 378px; } }
 
 @media (pointer: coarse) and (min-device-width: 1024px) {
   #wrapper-hero {
     margin-top: 120px;
     padding-bottom: 150px !important; }
   body {
-    padding-bottom: 404px; } }
+    padding-bottom: 378px; } }
 
 @media (max-width: 996px) {
   .container {
@@ -11862,7 +11862,7 @@ a.nav-link {
   #wrapper-footer {
     margin-top: 40px !important; }
   body {
-    padding-bottom: 404px; } }
+    padding-bottom: 378px; } }
 
 @media (max-width: 775px) {
   .carousel-image-holder {
@@ -11879,7 +11879,7 @@ a.nav-link {
   .navbar-nav .nav-link {
     text-align: center; }
   body {
-    padding-bottom: 741px; } }
+    padding-bottom: 772px; } }
 
 @media (max-width: 575px) {
   #hero-slides {
@@ -11900,7 +11900,7 @@ a.nav-link {
   #wrapper-footer {
     margin-top: 40px !important; }
   body {
-    padding-bottom: 741px; } }
+    padding-bottom: 772px; } }
 
 .editions {
   white-space: normal; }
@@ -11946,7 +11946,7 @@ a.nav-link {
   color: rgba(0, 0, 0, 0.5);
   border: none;
   padding: 0;
-  margin-top: -60px;
+  margin-top: -35px;
   font-size: .8rem;
   text-transform: uppercase; }
 
@@ -12096,6 +12096,10 @@ a.nav-link {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%; } }
+
+.social-icons {
+  width: 60px;
+  height: 60px; }
 
 /*
 * Use existing Bootstrap 4 classes and
