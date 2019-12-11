@@ -41,11 +41,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand d-flex justify-content-center mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?><span class="brandnamestyle"> <?php bloginfo ( 'description' ); ?></span></a></h1>
 
 						<?php else : ?>
 
-							<a class="navbar-brand d-flex justify-content-center" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?><span class="brandnamestyle"> <?php bloginfo ( 'description' ); ?></span></a>
 
 						<?php endif; ?>
 
