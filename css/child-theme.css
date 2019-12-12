@@ -11917,7 +11917,7 @@ a.nav-link {
   overflow: hidden;
   max-width: 100%; }
 
-.feed-embed .embed-container {
+.feed-embed.embed-container {
   z-index: -1; }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
