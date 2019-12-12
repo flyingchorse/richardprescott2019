@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 	<div class="container">
-			<div class="row	justify-content-center pb-4 brandnamestyle">RICHARD PRESCOTT PHOTOGRAPHER</div>
+			<div class="row	justify-content-center pb-4 footer-brandnamestyle">RICHARD PRESCOTT PHOTOGRAPHER</div>
 		<div class="row  justify-content-center">
 			
 		<nav class="navbar navbar-expand-md navbar-light justify-content-center pb-4">	
