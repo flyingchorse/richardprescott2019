@@ -34,7 +34,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container-fluid thumb-grid journal-grid">
 		
 	<div class="row">
-		<div class="col-sm-12"><?php journal_feed('2dot4',5, 'blog'); ?></div>
+		<div class="col-sm-12"><?php journal_feed('2dot4',5, 'journal'); ?></div>
 		
 	
 	</div>

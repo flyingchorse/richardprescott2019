@@ -11619,7 +11619,8 @@ html {
 body {
   padding-bottom: 378px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem; }
 
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
@@ -11627,18 +11628,17 @@ ul#project-menu.navbar-nav {
 h1 {
   font-size: 1.25rem;
   text-transform: uppercase;
-  color: black; }
+  color: rgba(0, 0, 0, 0.5); }
 
 .copyrightinfo {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5); }
 
-.content-area {
-  color: gray; }
-
 .entry-footer a {
-  color: gray;
-  opacity: 0.8; }
+  color: rgba(0, 0, 0, 0.5); }
+
+.nav-links a {
+  color: rgba(0, 0, 0, 0.5); }
 
 .navbar-brand {
   padding-top: 60px;
@@ -11652,6 +11652,9 @@ h1 {
 .insta-block {
   margin: 0 auto;
   width: 640px; }
+
+.brandnamestyle {
+  font-size: 1.0rem; }
 
 .thumb-card {
   padding: 30px;
