@@ -11618,7 +11618,8 @@ html {
 
 body {
   padding-bottom: 378px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5); }
 
 ul#project-menu.navbar-nav {
   border-bottom: 1px solid transparent; }
