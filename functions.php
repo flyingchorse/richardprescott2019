@@ -654,7 +654,7 @@ function thumbnail_feed($theparent)
 					
 					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a> <?php } else {
 						?>
-						<a class='align-bottom thumbnail-image' href='<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>'></span><div class='embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
+						<a class='align-bottom thumbnail-image' href='<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>'></span><div class='feed-embed embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
 						<?php
 						
 					} ?>
