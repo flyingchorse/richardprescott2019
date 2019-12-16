@@ -709,7 +709,7 @@ function journal_feed($columns,$numposts,$postcat)
 				<div class="col-md-<?php echo $columns;?> col-xl-<?php echo $columns;?> thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					
 					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'grid-journal' , array( "class" => " align-bottom") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
-					<div class="feed-title d-flex">#<?php the_title();$post_tags = get_the_tags();
+					<div class="feed-title d-flex"><?php the_title();$post_tags = get_the_tags();
  
 if ( $post_tags ) {
     foreach( $post_tags as $tag ) {
