@@ -5,18 +5,19 @@
  * @package understrap
  */
 
-$col = get_theme_mod( 'understrap_grid_post_columns' );
+// $col = get_theme_mod( 'understrap_grid_post_columns' );
+$col = 4;
 ?>
-<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
-	<div class="col-md-<?php echo esc_html( $col ); ?> col-xs-12">
 
+	<div class="col-md-<?php echo esc_html( $col ); ?> thumb-card col-xl-4">
 
+	<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
 		<div class="card card-inverse ">
 
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<?php $alt = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true ); ?>
 				<img class="card-img "
-				     src="<?php echo esc_html( get_the_post_thumbnail_url( $post->ID, 'large' ) ) ?>" alt="<?php echo esc_html( $alt ); ?>">
+				     src="<?php echo esc_html( get_the_post_thumbnail_url( $post->ID, 'grid-journal' ) ) ?>" alt="<?php echo esc_html( $alt ); ?>">
 
 				<div class="card-img-overlay">
 
@@ -40,6 +41,6 @@ $col = get_theme_mod( 'understrap_grid_post_columns' );
 
 		</div>
 
-
+	</a>
 	</div>
-</a>
+
