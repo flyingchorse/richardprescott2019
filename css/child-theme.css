@@ -12059,6 +12059,9 @@ a.nav-link {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5); }
 
+.card-img-overlay {
+  color: white; }
+
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,
