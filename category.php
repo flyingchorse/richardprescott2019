@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<main class="site-main row" id="main">
+			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -35,7 +35,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 					</header><!-- .page-header -->
 
-					<?php /* Start the Loop */ ?>
+                    <?php /* Start the Loop */ ?>
+                    <div class="row">
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php
@@ -49,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 
 					<?php endwhile; ?>
-
+                    </div>
 				<?php else : ?>
 
 					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
