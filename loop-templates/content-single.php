@@ -53,7 +53,7 @@
 			'after'  => '</div>',
 		) );
 		?>
-		<div class="entry-meta">
+		<div class="entry-meta ">
 
 			<?php //  understrap_posted_on(); 
 				$posted_on_date = get_the_date();
@@ -63,7 +63,7 @@
 		</div><!-- .entry-meta -->
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer mb-5">
+	<footer class="entry-footer mb-5 <?php if (has_category('instagram',$post->ID)) { echo 'insta-block' ;}  ?>">
 		
 		<?php understrap_entry_footer(); ?>
 
