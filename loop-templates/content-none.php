@@ -12,11 +12,11 @@
 
 	<header class="page-header">
 
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'understrap' ); ?></h1>
+		<h1 class="page-title text-center"><?php _e( 'Nothing Found', 'understrap' ); ?></h1>
 
 	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<div class="page-content pb-5 pt-5 text-center ">
 
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -25,7 +25,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.',
+			<p class=" pb-5 "><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.',
 			'understrap' ); ?></p>
 			<?php get_search_form(); ?>
 

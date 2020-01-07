@@ -25,7 +25,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	 
 <div class="wrapper" id="index-wrapper">
 	
-	<div class="container-fluid">
+	<!-- <div class="container-fluid">
 		<div class="col-sm-12 feed-divider nav-link">Journal</div>
 	</div>
 
@@ -34,10 +34,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<div class="container-fluid thumb-grid journal-grid">
 		
 	<div class="row">
-		<div class="col-sm-12"><?php journal_feed('2dot4',5, 'journal'); ?></div>
+		<div class="col-sm-12"><?php // journal_feed('2dot4',5, 'journal'); ?></div>
 		
 	
-	</div>
+	</div> -->
 	</div>
 	<div class="container-fluid">
 		<div class="col-sm-12 feed-divider nav-link">Instagram</div>
