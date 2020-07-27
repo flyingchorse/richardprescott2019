@@ -158,6 +158,61 @@ function digidol_gallery_carousel() {
 add_action('digidol_hero','digidol_gallery_carousel');
 
 // function to list the feed on the home page which will list the items and then link to their relevant pages.
+// New function to display all images in column format with no carousel.
+// New function to display all images in column format with no carousel.
+
+function digidol_gallery_column_layout() {
+    do_action('digidol_gallery_column_layout');
+} // end digidol_gallery_column_layout
+
+function digidol_gallery_column() {
+global $post;
+$the_content =  $post->post_content;
+$the_content = preg_replace("~(?:\[/?)[^/\]]+/?\]~s", '', $the_content);  # strip shortcodes, keep shortcode content
+//remove_shortcode( 'gallery' );
+$new_content = apply_filters('the_content',$the_content);
+echo $new_content;  
+
+
+
+
+preg_match('/\[gallery.*ids=.(.*).\]/', $post->post_content, $ids);
+if ($ids) {
+$attachments = explode(",", $ids[1]);
+$thumbnailelement = "";
+
+					$loopcount = 0;		
+				if ($attachments) {
+					foreach ( $attachments as $attachment ) {
+				
+					$imagethumbnail = wp_get_attachment_image_src($attachment, 'full');
+					$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
+					$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom" )) . "</a></div>";
+					$loopcount++;
+					}
+				}
+					
+// this is where the output for the thumbnails goes
+
+	?>
+	<div class="show container-fluid thumb-grid" id="multic-2">
+	<div class="row"><?php
+echo $thumbnailelement;
+?></div></div>
+<?php
+
+//End of Thumbnails
+}
+}
+
+add_action('digidol_gallery_column_layout','digidol_gallery_column');
+// New function to display all images in column format with no carousel.
+// New function to display all images in column format with no carousel.
+// New function to display all images in column format with no carousel.
+// New function to display all images in column format with no carousel.
+// New function to display all images in column format with no carousel.
+
+
 
 
 function digidol_build_homepage_feed() {
