@@ -11662,7 +11662,7 @@ h1 {
   white-space: nowrap; }
 
 .column-gallery {
-  padding: 130px;
+  padding: 0,130px,130px,130px;
   text-align: center;
   white-space: nowrap; }
 
