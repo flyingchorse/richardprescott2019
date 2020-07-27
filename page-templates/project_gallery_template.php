@@ -16,6 +16,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 // is active and the current page is a WooCommerce page and we do
 ?>
 
-<?php digidol_hero();?>
+<?php digidol_gallery_column_layout();?>
 
 <?php get_footer(); ?>
