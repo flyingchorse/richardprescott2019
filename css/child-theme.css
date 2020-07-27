@@ -11825,11 +11825,7 @@ a.nav-link {
     margin: 0 auto;
     white-space: nowrap; }
   .rjp-infobox {
-    height: 630px; }
-  .column-gallery {
-    padding: 0 300px 100px 300px;
-    text-align: center;
-    white-space: nowrap; } }
+    height: 630px; } }
 
 @media (max-width: 1680px) {
   #wrapper-footer {
@@ -12114,7 +12110,11 @@ a.nav-link {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
-    max-width: 20%; } }
+    max-width: 20%; }
+  .column-gallery {
+    padding: 0 300px 100px 300px;
+    text-align: center;
+    white-space: nowrap; } }
 
 .social-icons {
   width: 60px;

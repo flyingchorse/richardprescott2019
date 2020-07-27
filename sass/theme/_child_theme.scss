@@ -281,11 +281,7 @@ height: 570px;
 .rjp-infobox {
 height: 630px;	
 }
-.column-gallery {
-	padding: 0 300px 100px 300px;
-	text-align: center;
-	white-space: nowrap;
-}
+
 }
 
 
@@ -651,7 +647,12 @@ body {
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
-    }
+	}
+	.column-gallery {
+		padding: 0 300px 100px 300px;
+		text-align: center;
+		white-space: nowrap;
+	}
 }
 
 .social-icons {
