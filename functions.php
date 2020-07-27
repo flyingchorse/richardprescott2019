@@ -187,7 +187,7 @@ $thumbnailelement = "";
 				
 					$imagethumbnail = wp_get_attachment_image_src($attachment, 'full');
 					$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
-					$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom" )) . "</a></div>";
+					$thumbnailelement .= "<div class='col-md-12 col-xl-12 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'large',"", array( "class" => " align-bottom" )) . "</a></div>";
 					$loopcount++;
 					}
 				}
