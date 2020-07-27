@@ -11661,6 +11661,11 @@ h1 {
   text-align: center;
   white-space: nowrap; }
 
+column-gallery {
+  padding: 130px;
+  text-align: center;
+  white-space: nowrap; }
+
 .navbar {
   padding: 0; }
 
