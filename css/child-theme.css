@@ -11825,12 +11825,11 @@ a.nav-link {
     margin: 0 auto;
     white-space: nowrap; }
   .rjp-infobox {
-    height: 630px; } }
-
-.column-gallery {
-  padding: 0 300px 100px 300px;
-  text-align: center;
-  white-space: nowrap; }
+    height: 630px; }
+  .column-gallery {
+    padding: 0 300px 100px 300px;
+    text-align: center;
+    white-space: nowrap; } }
 
 @media (max-width: 1680px) {
   #wrapper-footer {
