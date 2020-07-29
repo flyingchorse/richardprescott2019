@@ -12114,7 +12114,9 @@ a.nav-link {
   .column-gallery {
     padding: 0 300px 100px 300px;
     text-align: center;
-    white-space: nowrap; } }
+    white-space: nowrap; }
+  .grid-portrait {
+    max-width: 50%; } }
 
 .social-icons {
   width: 60px;
