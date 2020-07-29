@@ -186,7 +186,7 @@ $thumbnailelement = "";
 					foreach ( $attachments as $attachment ) {
 				
 					$imagethumbnail = wp_get_attachment_image_src($attachment, 'full');
-					$aspect_thumbnail =	($imagethumbnail[2]>$imagethumbnail[1] ? "grid-portrait": "grid-landscape");
+					$aspect_thumbnail =	(($imagethumbnail[2]/$imagethumbnail[1])>.5 ? "grid-portrait": "grid-landscape");
 					$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
 					$thumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail" )) . "</div>";
 					$loopcount++;
