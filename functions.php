@@ -82,10 +82,11 @@ function digidol_gallery_carousel() {
 	if ($ids) {
 	$attachments = explode(",", $ids[1]);
 	$thumbnailelement = "";
+	$mobilethumbnailelement = "";
 	?>
 	
 <!-- 	Start Wrapper -->
-	<div class="wrapper collapse" id="wrapper-hero">
+	<div class="wrapper collapse hidden-on-mobile" id="wrapper-hero">
 <!-- Hero Slides -->
 		
 		<div class="container-fluid" id="hero-slides">
@@ -101,6 +102,7 @@ function digidol_gallery_carousel() {
 						foreach ( $attachments as $attachment ) {
 					
 						$imagethumbnail = wp_get_attachment_image_src($attachment, 'full');
+						$aspect_thumbnail =	($imagethumbnail[2]>$imagethumbnail[1] ? "grid-portrait": "grid-landscape");
 						$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
 						
 						?>
@@ -130,7 +132,8 @@ function digidol_gallery_carousel() {
 									</div>		
 									<?php 
 								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom" )) . "</a></div>";
-						$loopcount++;
+								$mobilethumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail" )) . "</div>";
+								$loopcount++;
 						}
 					}
 						?>
@@ -141,14 +144,21 @@ function digidol_gallery_carousel() {
 	</div>
 <!-- 	End Wrapper -->
 	<?php
-	
 	// this is where the output for the thumbnails goes
-	
 		?>
-		<div class="collapse show container-fluid thumb-grid" id="multic-2">
+		<div class="collapse show container-fluid thumb-grid hidden-on-mobile" id="multic-2">
 		<div class="row thumb-collapse"><?php
 	echo $thumbnailelement;
 	?></div></div>
+
+	<!-- Mobile Thumb Grid -->
+
+	<div class="show container-fluid mobile-thumb-grid not-hidden-on-mobile">
+		<div class="row"><?php
+	echo $mobilethumbnailelement;
+	?></div></div>
+	<!-- Mobile Thumb Grid -->
+	
 	<?php
 	
 	//End of Thumbnails

@@ -91,6 +91,13 @@ padding: 0;
 	padding-bottom: 150px !important;
 }
 
+.hidden-on-mobile {
+	position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+	
+}
+
 .carousel-inner {
 	overflow: visible;
 }
@@ -642,6 +649,20 @@ body {
     }
 }
 @media (min-width: 1140px) {
+	.hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+
+	.not-hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		
+	}
+
     .col-xl-2dot4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
