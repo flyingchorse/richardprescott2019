@@ -648,6 +648,7 @@ body {
         max-width: 20%;
     }
 }
+
 @media (min-width: 1140px) {
 	.hidden-on-mobile {
 		position: unset !important;
@@ -687,4 +688,137 @@ body {
 .social-icons {
 	width: 60px;
 	height: 60px;
+}
+
+/*iPad Pro 9.7"*/
+/* Portrait */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+
+
+	.hidden-on-mobile {
+	position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+	}
+}
+
+/* Landscape */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+	.hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		}
+
+}
+/*iPad Pro 10.5"*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-width: 834px)
+and (max-width: 834px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+	.hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		}
+	
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-width: 1112px)
+and (max-width: 1112px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+	.hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		}
+
+}
+/*ipad PRo 12.9"*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+	.hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		}
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+and (min-width: 1366px)
+and (max-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.not-hidden-on-mobile {
+		position: unset !important;
+	   top: unset !important;
+	   left: unset !important;
+		
+	}
+
+	.hidden-on-mobile {
+		position: absolute !important;
+	   top: -9999px !important;
+	   left: -9999px !important;
+		}
+
 }
