@@ -88,17 +88,6 @@ function digidol_gallery_carousel() {
 <!-- 	Start Wrapper -->
 	<div class="wrapper collapse hidden-on-mobile" id="wrapper-hero">
 <!-- Hero Slides -->
-<div class="row justify-content-center">
-					<div class="slide-buttons-cont hidden-md-down">
-						<div class="thumb-button">
-					
-								<a class="nav-link" href="#" data-toggle="collapse" data-target="#multic-2" >THUMBNAILS</a>
-								
-						</div>
-						
-					</div><!-- END OF slide-buttons-cont -->
-				</div> <!-- END OF ROW -->
-		
 		<div class="container-fluid" id="hero-slides">
 			
 			<div id="carouselExampleControls" class="carousel slide" data-interval="false">
@@ -141,6 +130,8 @@ function digidol_gallery_carousel() {
 
 			</div><!-- carouselExampleControls  -->
 			<div class="navigation-arrows fixed-bottom">
+			<div class="nav-arrows-cont">
+			<div class="bottom-thumb-nav navbar-light"><a class="nav-link" href="#" data-toggle="collapse" data-target="#multic-2" >THUMBNAILS</a></div>
 							<a class="carousel-control-prev slide-buttons" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -148,7 +139,8 @@ function digidol_gallery_carousel() {
   <a class="carousel-control-next slide-buttons" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a></div>
+  </a>
+			</div></div>
 		</div>
 <!-- End Hero Slides -->
 	</div>
