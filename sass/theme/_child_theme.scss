@@ -102,17 +102,22 @@ padding: 0;
 	overflow: visible;
 }
 
-.carousel-image-holder {
-	height: 550px;
-	margin: 0 auto;
-	white-space: nowrap;
+ .carousel-image-holder {
+// 	height: 550px;
+ 	margin: 0 auto;
+ 	white-space: nowrap;
+max-height: calc(100vh -200px);
+
+
 }
 
-.carousel-image-holder img {
-	width: auto;
-	max-height: 100%;
+ .carousel-image-holder img {
+// 	width: auto;
+// 	max-height: 100%;
+max-height: 70vh;
+max-width: 90vw;
 	
-}
+ }
 
 //Eventually found that the display:Flex fixed the auto margin being constrained by the child image. to positon the info button correctly
 carousel-inner {
@@ -187,7 +192,20 @@ carousel-inner {
 }
 
 .carousel-control-next, .carousel-control-prev {
-	width: 8%;
+	position: unset;
+	top: unset;
+	bottom: unset;
+	display: unset;
+	align-items: unset;
+	-webkit-box-pack: unset;
+	justify-content: unset;
+	text-align: unset;
+	width: unset;
+}
+
+.navigation-arrows {
+	left: 20px;
+	bottom: 20px;
 }
 
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
@@ -218,6 +236,9 @@ a.nav-link {
 	padding-top: 40px;
 }
 
+.site {
+	min-height: 100vh;
+}
 
 .helper {
     display: inline-block;
@@ -265,11 +286,11 @@ height: 570px;
 		margin-top: 0px;
 		padding-bottom: 150px!important;
 	}
-	.carousel-image-holder {
-	height: 930px;
-	margin: 0 auto;
-	white-space: nowrap;
-}
+	// .carousel-image-holder {
+	// height: 930px;
+	// margin: 0 auto;
+	// white-space: nowrap;
+//}
 .rjp-infobox {
 height: 630px;	
 }
@@ -295,9 +316,9 @@ height: 630px;
 @media (max-width: 1440px) {
 	
 	
-	.carousel-image-holder {
-	height: 480px;
-	}
+	// .carousel-image-holder {
+	// height: 480px;
+	// }
 	.rjp-infobox {
 height: 470px;	
 }
@@ -367,19 +388,19 @@ height: 470px;
 @media (max-width: 775px) {
 	
 	
-	.carousel-image-holder {
-	height: 440px;
-	margin: 0 auto;
-	white-space: nowrap;
-}
+// 	.carousel-image-holder {
+// 	height: 440px;
+// 	margin: 0 auto;
+// 	white-space: nowrap;
+// }
 .rjp-infobox {
 height: 470px;	
 }
 
-.carousel-image-holder img {
-	width: auto;
-	max-height: 100%;
-	}
+// .carousel-image-holder img {
+// 	width: auto;
+// 	max-height: 100%;
+// 	}
 	
 	
 	#wrapper-footer {
@@ -416,16 +437,16 @@ height: 470px;
 	
 	}
 
-.carousel-image-holder {
-	height: 240px;
-	margin: 0 auto;
-	white-space: nowrap;
-}
+// .carousel-image-holder {
+// 	height: 240px;
+// 	margin: 0 auto;
+// 	white-space: nowrap;
+// }
 
-.carousel-image-holder img {
-	width: auto;
-	max-height: 100%;	
-}
+// .carousel-image-holder img {
+// 	width: auto;
+// 	max-height: 100%;	
+// }
 
 #wrapper-footer {
 		margin-top:40px!important;

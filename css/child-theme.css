@@ -11682,13 +11682,13 @@ h1 {
   overflow: visible; }
 
 .carousel-image-holder {
-  height: 550px;
   margin: 0 auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  max-height: calc(100vh -200px); }
 
 .carousel-image-holder img {
-  width: auto;
-  max-height: 100%; }
+  max-height: 70vh;
+  max-width: 90vw; }
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display: -webkit-box;
@@ -11733,7 +11733,22 @@ h1 {
   float: left; }
 
 .carousel-control-next, .carousel-control-prev {
-  width: 8%; }
+  position: unset;
+  top: unset;
+  bottom: unset;
+  display: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+      justify-content: unset;
+  text-align: unset;
+  width: unset; }
+
+.navigation-arrows {
+  left: 20px;
+  bottom: 20px; }
 
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
   color: #878787; }
@@ -11756,6 +11771,9 @@ a.nav-link {
   background-color: transparent;
   z-index: 2000;
   padding-top: 40px; }
+
+.site {
+  min-height: 100vh; }
 
 .helper {
   display: inline-block;
@@ -11796,10 +11814,6 @@ a.nav-link {
   #wrapper-hero {
     margin-top: 0px;
     padding-bottom: 150px !important; }
-  .carousel-image-holder {
-    height: 930px;
-    margin: 0 auto;
-    white-space: nowrap; }
   .rjp-infobox {
     height: 630px; } }
 
@@ -11813,8 +11827,6 @@ a.nav-link {
     padding-bottom: 378px; } }
 
 @media (max-width: 1440px) {
-  .carousel-image-holder {
-    height: 480px; }
   .rjp-infobox {
     height: 470px; }
   #wrapper-hero {
@@ -11851,15 +11863,8 @@ a.nav-link {
     padding-bottom: 378px; } }
 
 @media (max-width: 775px) {
-  .carousel-image-holder {
-    height: 440px;
-    margin: 0 auto;
-    white-space: nowrap; }
   .rjp-infobox {
     height: 470px; }
-  .carousel-image-holder img {
-    width: auto;
-    max-height: 100%; }
   #wrapper-footer {
     margin-top: 40px !important; }
   .navbar-nav .nav-link {
@@ -11876,13 +11881,6 @@ a.nav-link {
   .brandnamestyle {
     float: left;
     width: 100%; }
-  .carousel-image-holder {
-    height: 240px;
-    margin: 0 auto;
-    white-space: nowrap; }
-  .carousel-image-holder img {
-    width: auto;
-    max-height: 100%; }
   #wrapper-footer {
     margin-top: 40px !important; }
   body {

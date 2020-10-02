@@ -138,15 +138,17 @@ function digidol_gallery_carousel() {
 					}
 						?>
 				</div><!-- carousel-inner -->
-				<a class="carousel-control-prev slide-buttons" href="#carouselExampleControls" role="button" data-slide="prev">
+
+			</div><!-- carouselExampleControls  -->
+			<div class="navigation-arrows fixed-bottom">
+							<a class="carousel-control-prev slide-buttons" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next slide-buttons" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>
-			</div><!-- carouselExampleControls  -->
+  </a></div>
 		</div>
 <!-- End Hero Slides -->
 	</div>
