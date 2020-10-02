@@ -112,7 +112,10 @@ function digidol_gallery_carousel() {
 						foreach ( $attachments as $attachment ) {
 					
 						$imagethumbnail = wp_get_attachment_image_src($attachment, 'full');
-						$aspect_thumbnail =	($imagethumbnail[2]>$imagethumbnail[1] ? "grid-portrait": "grid-landscape");
+						$aspect_thumbnail =	($imagethumbnail[2]>$imagethumbnail[1] ? "carousel-portrait": "carousel-landscape");
+						if ($aspect_thumbnail == "grid-landscape") {
+							$aspect_thumbnail =	(($imagethumbnail[2]/$imagethumbnail[1])>.7 ? "carousel-landscape-tall": "carousel-landscape");
+							}
 						$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
 						
 						?>
@@ -120,7 +123,7 @@ function digidol_gallery_carousel() {
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
 										<div class="carousel-image-holder">																				
-											<img class ="d-block mx-auto"src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
+											<img class ="d-block mx-auto <?php echo $aspect_thumbnail;  ?>"src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>
 												<div id="collapse<?php echo $loopcount ?>" class="collapse image-caption-text"><?php echo get_post_field('post_content', $attachment);?></div>
