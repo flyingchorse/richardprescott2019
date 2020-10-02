@@ -11835,6 +11835,8 @@ a.nav-link {
     padding-bottom: 378px; } }
 
 @media (max-width: 1440px) {
+  .navbar-brand {
+    padding-top: 15px; }
   .rjp-infobox {
     height: 470px; }
   #wrapper-hero {
