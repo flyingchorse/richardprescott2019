@@ -54,6 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 			</div>
+			<div class="navigation-wrapper">
 			<nav class="navbar navbar-expand-md navbar-light justify-content-center">
 					
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
@@ -171,7 +172,9 @@ if ( $post->post_parent ) {
 		<!-- .container -->
 			<?php endif; ?>
 
-		</nav><!-- .site-navigation -->
+		</nav>
+			
+			<!-- .site-navigation -->
 <nav class="navbar navbar-expand-md navbar-light justify-content-center">
 	<div id="navbarNavDropdown" class="collapse navbar-collapse justify-content-center" style="">
     <ul class="navbar-nav this is where it is">
@@ -184,5 +187,5 @@ if ( $post->post_parent ) {
 				
 
 				</nav>
-
+				</div><!-- end of navigation wrapper -->
 	</div><!-- #wrapper-navbar end -->

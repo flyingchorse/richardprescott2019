@@ -11649,6 +11649,9 @@ h1 {
   letter-spacing: 0.15em;
   text-align: center; }
 
+.navigation-wrapper {
+  height: 72px; }
+
 .insta-block {
   margin: 0 auto;
   width: 640px; }
