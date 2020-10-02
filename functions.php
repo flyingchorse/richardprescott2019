@@ -73,7 +73,7 @@ function digidol_gallery_carousel() {
 	$the_content = preg_replace("~(?:\[/?)[^/\]]+/?\]~s", '', $the_content);  # strip shortcodes, keep shortcode content
 	//remove_shortcode( 'gallery' );
 	$new_content = apply_filters('the_content',$the_content);
-	echo $new_content;  
+	//echo $new_content;  
 
 	
 	
