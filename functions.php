@@ -120,7 +120,7 @@ function digidol_gallery_carousel() {
 										</div>
 									</div>		
 									<?php 
-								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom" )) . "</a></div>";
+								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => " align-bottom" )) . "</a></div>";
 								$mobilethumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail" )) . "</div>";
 								$loopcount++;
 						}
@@ -662,9 +662,9 @@ function thumbnail_overview($theparent)
 				
 				
 				?>
-				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  echo $childpost[$i]['title'];  ?>" >
+				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center" data-toggle="tooltip" data-placement="bottom" title="<?php  echo $childpost[$i]['title'];  ?>" >
 					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'grid-aspect', array( "class" => " align-bottom")); ?></a>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'full', array( "class" => " align-bottom")); ?></a>
 					
 				</div>
 				<?php
