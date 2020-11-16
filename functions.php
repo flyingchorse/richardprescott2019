@@ -112,7 +112,7 @@ function digidol_gallery_carousel() {
 								
 									<div class="carousel-item <?php if ($loopcount == 0) { echo 'active'; }; ?>">			
 										<div class="carousel-image-holder">																				
-											<img class ="d-block mx-auto <?php echo $aspect_thumbnail;  ?>"src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
+											<img class ="d-block mx-auto  <?php echo $aspect_thumbnail;  ?>" draggable= "false" src="<?php echo $imagethumbnail[0]; ?>" alt="<?php echo $imag_alt;?>" />
 											<div class="caption-container clearfix" id="slide-post-<?php echo $attachment; ?>">
 												<div class="image-caption " id="slide-caption-<?php echo get_post_field('post_content', $attachment);?>"><a class="btn btn-primary info-button" data-toggle="collapse" href="#collapse<?php echo $loopcount ?>" aria-expanded="false" aria-controls="collapseExample"></a></div>
 												<div id="collapse<?php echo $loopcount ?>" class="collapse image-caption-text"><?php echo get_post_field('post_content', $attachment);?></div>
@@ -120,8 +120,8 @@ function digidol_gallery_carousel() {
 										</div>
 									</div>		
 									<?php 
-								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => " align-bottom" )) . "</a></div>";
-								$mobilethumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail" )) . "</div>";
+								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => " align-bottom", "draggable" => "false")) . "</a></div>";
+								$mobilethumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail", "draggable" => "false" )) . "</div>";
 								$loopcount++;
 						}
 					}
@@ -203,7 +203,7 @@ $thumbnailelement = "";
 					$aspect_thumbnail =	(($imagethumbnail[2]/$imagethumbnail[1])>.7 ? "grid-landscape_tall": "grid-landscape");
 					}
 					$imag_alt = get_post_meta($attachment, '_wp_attachment_image_alt', true);
-					$thumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail" )) . "</div>";
+					$thumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail", "draggable" => " false")) . "</div>";
 					$loopcount++;
 					}
 				}
@@ -280,7 +280,7 @@ function digidol_build_homepage_feed() {
 										</div>
 									</div>		
 									<?php 
-								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom" )) . "</a></div>";
+								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-aspect',"", array( "class" => " align-bottom", "draggable" => " false")) . "</a></div>";
 						$loopcount++;
 						}
 					}
@@ -664,7 +664,7 @@ function thumbnail_overview($theparent)
 				?>
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center" data-toggle="tooltip" data-placement="bottom" title="<?php  echo $childpost[$i]['title'];  ?>" >
 					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'full', array( "class" => " align-bottom")); ?></a>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'full', array( "class" => " align-bottom", "draggable" => "false")); ?></a>
 					
 				</div>
 				<?php
@@ -723,7 +723,7 @@ function thumbnail_feed($theparent)
 					
 					<?php if (!$thevimeoid) { ?>
 					
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php echo wp_get_attachment_image($attachment, 'grid-height', array( "class" => " align-bottom")); ?></a> <?php } else {
+					<a class="align-bottom thumbnail-image dragg" href="<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>" ><?php $the_feed_thumb =  wp_get_attachment_image($attachment, 'grid-height',  'false' , array( "class" => " align-bottom", "draggable" => "false")); echo $the_feed_thumb; ?></a> <?php } else {
 						?>
 						<a class='align-bottom thumbnail-image' href='<?php $gallery_url =  get_permalink($thegallerylinkid); echo $gallery_url ; ?>'></span><div class='feed-embed embed-container'><iframe src='https://player.vimeo.com/video/<?php echo $thevimeoid; ?>?background=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></a>
 						<?php
@@ -779,7 +779,7 @@ function journal_feed($columns,$numposts,$postcat)
 							?>
 				<div class="col-md-<?php echo $columns;?> col-xl-<?php echo $columns;?> thumb-card thumb-tooltip" data-toggle="tooltip" data-placement="bottom" title="<?php  	  ?>" >
 					
-					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'grid-journal' , array( "class" => " align-bottom") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
+					<a class="align-bottom thumbnail-image" href="<?php the_permalink();?>" ><?php the_post_thumbnail( 'grid-journal' , array( "class" => " align-bottom","draggable" => "false") ) /* echo wp_get_attachment_image($post->ID, 'large', array( "class" => " align-bottom"));  */?></a>
 					<div class="feed-title d-flex"><?php the_title();$post_tags = get_the_tags();
  
 if ( $post_tags ) {

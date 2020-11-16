@@ -7092,3 +7092,6 @@ jQuery('#multic-2').on('show.bs.collapse', function () {
   
   jQuery("#wrapper-hero").collapse('hide');
 });
+
+document.oncontextmenu =new Function("return false;")
+document.onselectstart =new Function("return false;")
