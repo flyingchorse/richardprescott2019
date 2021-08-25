@@ -59,6 +59,11 @@ h1 {
     animation: imageAnimation 36s linear infinite 0s; 
 }
 
+.cb-slideshow li::marker {
+	color:transparent;
+	
+  }
+
 .cb-slideshow li:nth-child(1) span { 
      
 }
