@@ -32,6 +32,12 @@ h1 {
 }
 
 // Slideshow Styles
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 
 .cb-slideshow,
 .cb-slideshow:after { 
@@ -95,6 +101,8 @@ h1 {
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
+
+
 
 //Slideshow Styles
 

@@ -45,5 +45,13 @@ jQuery('#multic-2').on('show.bs.collapse', function () {
   jQuery("#wrapper-hero").collapse('hide');
 });
 
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
+
 //document.oncontextmenu =new Function("return false;")
 //document.onselectstart =new Function("return false;")
