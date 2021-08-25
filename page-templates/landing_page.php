@@ -20,3 +20,5 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	 
 	 	
 </div><!-- #index-wrapper -->
+
+<?php get_footer('landing'); ?>
