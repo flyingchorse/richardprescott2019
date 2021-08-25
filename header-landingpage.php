@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 			</div>
-			<nav class="navbar navbar-expand-md navbar-light justify-content-center">
+			<nav class="navbar navbar-light justify-content-center">
 					
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
@@ -80,7 +80,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse justify-content-center',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
+						'menu_class'      => 'navbar-nav text-center',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 3,
