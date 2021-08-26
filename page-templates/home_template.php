@@ -31,6 +31,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					<div class="carousel-item ">			
 						<div class="carousel-image-holder align-middle"><span class="helper"></span><img class="img-fluid" src="<?php echo $landingimage2['url']; ?>"></div>
 					</div>
+
+					<div class="carousel-item ">			
+						<div class="carousel-image-holder align-middle"><span class="helper"></span><img class="img-fluid" src="<?php echo $landingimage3['url']; ?>"></div>
+					</div>
 			
 				</div>
 				
