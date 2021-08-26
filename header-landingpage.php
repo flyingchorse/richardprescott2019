@@ -21,21 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('landingpage'); ?>>
-<?php $landingimage1 = get_field('landing_image_1'); ?>
-<?php $landingimage2 = get_field('landing_image_2'); ?>
-<?php $landingimage3 = get_field('landing_image_3'); ?>
+<body <?php body_class(); ?>>
 
-
-<ul class="cb-slideshow">
-<li><span  style="background-image: url('<?php echo $landingimage1['url']; ?>');"></span></li>
-<li><span  style="background-image: url('<?php echo $landingimage2['url']; ?>');"></span></li>
-<li><span  style="background-image: url('<?php echo $landingimage3['url']; ?>');"></span></li>
-<li><span  style="background-image: url('<?php echo $landingimage1['url']; ?>');"></span></li>
-<li><span  style="background-image: url('<?php echo $landingimage2['url']; ?>');"></span></li>
-<li><span  style="background-image: url('<?php echo $landingimage3['url']; ?>');"></span></li>
-
-</ul>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
