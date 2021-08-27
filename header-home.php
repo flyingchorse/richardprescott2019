@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('landingpage'); ?>>
+<body <?php body_class(); ?>>
 
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">

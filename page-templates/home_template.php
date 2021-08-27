@@ -7,7 +7,7 @@
  * @package understrap
  */
 
-get_header(landingpage);
+get_header(home);
 
 $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
