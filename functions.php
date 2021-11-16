@@ -120,7 +120,7 @@ function digidol_gallery_carousel() {
 										</div>
 									</div>		
 									<?php 
-								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => " align-bottom", "draggable" => "false")) . "</a></div>";
+								$thumbnailelement .= "<div class='col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span><a class='thumbnail-image align-bottom' href='#' change-slide-to='" . $loopcount ."' >" .  wp_get_attachment_image($attachment, 'grid-height',"", array( "class" => " align-bottom", "draggable" => "false")) . "</a></div>";
 								$mobilethumbnailelement .= "<div class='col-md-12 col-xl-12 column-gallery thumb-tooltip' data-toggle='tooltip' data-placement='bottom' title=''><span class='helper'></span>" .  wp_get_attachment_image($attachment, 'full',"", array( "class" => "align-bottom $aspect_thumbnail", "draggable" => "false" )) . "</div>";
 								$loopcount++;
 						}
