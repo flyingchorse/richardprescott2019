@@ -664,7 +664,7 @@ function thumbnail_overview($theparent)
 				?>
 				<div class="col-md-4 col-xl-4 thumb-card thumb-tooltip align-self-center" data-toggle="tooltip" data-placement="bottom" title="<?php  echo $childpost[$i]['title'];  ?>" >
 					<span class="helper"></span>
-					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'full', array( "class" => " align-bottom", "draggable" => "false")); ?></a>
+					<a class="align-bottom thumbnail-image" href="<?php $gallery_url =  get_permalink($childpost[$i]['postID']); echo $gallery_url ; ?>" ><?php echo get_the_post_thumbnail($childpost[$i]['postID'], 'grid-height', array( "class" => " align-bottom", "draggable" => "false")); ?></a>
 					
 				</div>
 				<?php
