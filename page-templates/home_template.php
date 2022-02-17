@@ -21,7 +21,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <div class="wrapper" id="wrapper-hero">
 
 	<div class="container-fluid" id="hero-slides">
-		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-interval="20000" data-ride="carousel" data-pause="false">
+		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-interval="2000" data-ride="carousel" data-pause="false">
 		
 				<div class="carousel-inner" role="listbox">
 									<div class="carousel-item active">			
