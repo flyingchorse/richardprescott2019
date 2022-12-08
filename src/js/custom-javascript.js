@@ -87,7 +87,6 @@ var hamburg = document.getElementById("eu_cookie_law_widget-2");
 
 var cookiesalreadyaccept = document.getElementById("eu-cookie-law");
 
-
 var myCookie = getCookie("eucookielaw");
 
 if (myCookie == null) {
