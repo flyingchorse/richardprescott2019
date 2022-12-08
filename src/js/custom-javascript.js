@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
 	
 	var url = window.location.href;
 	var slide = url.substring(url.lastIndexOf('/')+2); // 4
+	var hamburger = document.getElementById("cookiemodal")
 	
 	// Remove the trailing slash if necessary
 	if( slide.indexOf("/") > -1 ) { 
@@ -14,6 +15,8 @@ jQuery(document).ready(function(){
 	}
 	
 	jQuery('[data-toggle="tooltip"]').tooltip();
+
+	
 	
 });
 
@@ -55,3 +58,4 @@ function showPage() {
 
 //document.oncontextmenu =new Function("return false;")
 //document.onselectstart =new Function("return false;")
+

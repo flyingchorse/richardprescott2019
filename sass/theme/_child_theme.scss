@@ -11,6 +11,32 @@ body {
 	font-size: 0.8rem;
 }
 
+.widget_eu_cookie_law_widget {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+}
+
+
+#eu-cookie-law {
+	position: fixed!important;
+	bottom: 1em;
+	width: 98%;
+}
+#cookiemodal {
+	
+}
+.cookiemodal-accepted {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0
+
+}
+.cookiemodal-accepted {
+	display: none;
+}
 
 ul#project-menu.navbar-nav {
 	border-bottom: 1px solid transparent;

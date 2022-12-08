@@ -7072,7 +7072,8 @@
 jQuery(document).ready(function () {
   var url = window.location.href;
   var slide = url.substring(url.lastIndexOf('/') + 2); // 4
-  // Remove the trailing slash if necessary
+
+  var hamburger = document.getElementById("cookiemodal"); // Remove the trailing slash if necessary
 
   if (slide.indexOf("/") > -1) {
     var slideRmvSlash = slide.replace('/', '');

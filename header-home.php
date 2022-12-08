@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<nav class="navbar navbar-light justify-content-center">
 					
-			<a href="../home" class="navbar-toggler-icon landingburger">
+			<a id="landingburger1" href="../home" class="navbar-toggler-icon landingburger">
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(

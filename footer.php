@@ -43,10 +43,13 @@ ALL RIGHTS RESERVED. NO USE OR COPYING BY ANY MEANS, TRANSFERENCE OR ANY REUSE O
 	
 
 </div><!-- wrapper end -->
+<div id="cookiemodal"></div>
 
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+
+
 
 </body>
 
