@@ -59,3 +59,19 @@ function showPage() {
 //document.oncontextmenu =new Function("return false;")
 //document.onselectstart =new Function("return false;")
 
+const mainNode = document.getElementById('eu-cookie-law')
+var hamburg = document.getElementById("eu_cookie_law_widget-3")
+
+function callback(mutationsList, observer) {
+    console.log('Mutations:', mutationsList)
+    console.log('Observer:', observer)
+    mutationsList.forEach(mutation => {
+        if (mutation.attributeName === 'class') {
+			hamburg.classList.add("cookiemodal-accepted");
+        }
+    })
+}
+
+const mutationObserver = new MutationObserver(callback)
+
+mutationObserver.observe(mainNode, { attributes: true })
