@@ -60,7 +60,7 @@ function showPage() {
 //document.onselectstart =new Function("return false;")
 
 const mainNode = document.getElementById('eu-cookie-law')
-var hamburg = document.getElementById("eu_cookie_law_widget-3")
+var hamburg = document.getElementById("eu_cookie_law_widget-2")
 
 function callback(mutationsList, observer) {
     console.log('Mutations:', mutationsList)
